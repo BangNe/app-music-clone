@@ -1,0 +1,32 @@
+:root {
+    --main-color : #170f23;
+    --text-secondary-color: hsla(0,0%,100%,0.5);
+    --navigation-text-color: #dadada;
+    --sitebar-color : #393243;
+    --text-primary-color: #fff;
+    --navigation-color : #231b2e;
+    --purple-color: #7200a1;
+    --footer-color : #120c1c;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}

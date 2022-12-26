@@ -1,0 +1,145 @@
+@media(max-width : 1199px) {
+    .control__select__time__tree {
+        width: 300px;
+    }
+}
+
+@media(max-width : 1060px) {
+    .left {
+        width: 70px;
+    }
+
+    .left__header__img {
+        width: 40px;
+    }
+
+    .left__header__img--big {
+        display: none;
+    }
+
+    .left__header__img--small {
+        display: inline;
+    }
+
+    .left__link span {
+        display: none;
+    }
+
+    .left__category__vip {
+        display: none;
+    }
+
+    .right__header__input input {
+        width: 200px;
+    }
+}
+
+@media(max-width : 900px) {
+    .right__music__playlist__img {
+        display: none;
+    }
+}
+
+@media(max-width : 835px) {
+    .control__select {
+        width: 200px;
+    }
+
+    .control__select__time__tree {
+        width: 200px;
+    }
+}
+
+@media(max-width : 767px) {
+    .left {
+        display: none;
+    }
+
+    .right__header__btn {
+        display: none;
+    }
+
+    .right__header__user a {
+        display: none;
+    }
+
+    .right__profile__vip {
+        display: none;
+    }
+
+    .right__music {
+        margin: 14px 0px 0;
+    }
+
+    .right__music__playlist__song--info--name {
+        width: 200px;
+    }
+
+    .right__music__playlist__song--select {
+        display: none;
+    }
+
+    .right__music__title--select {
+        display: none;
+    }
+
+    .control__info {
+        display: none;
+    }
+
+    .control__select {
+        width: 300px;
+    }
+
+    .control__select__btn {
+        width: 300px;
+    }
+
+    .control__volume {
+        width: 100px;
+    }
+
+    .control__volume--input{
+        width: 70px;
+    }
+}
+
+@media(max-width : 500px) {
+
+    .right__profile__img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    .right__music__playlist__song--info--name {
+        width: 100%;
+    }
+
+    .right__music__playlist__song--time {
+        display: none;
+    }
+
+    .control {
+        justify-content: center;
+    }
+
+    .control__volume {
+        display: none;
+    }
+}
+
+@media(max-width : 500px) and (max-height : 700px) {
+    .main {
+        height: 80vh;
+    }
+
+    .control {
+        height: 20vh;
+    }
+
+    .right__music__playlist__list {
+        height: 200px;
+    }
+}
