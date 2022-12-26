@@ -12,6 +12,7 @@ const nameSinge = document.querySelector('.control__info--name span')
 const timeSong = document.querySelector('.control__select__time--right')
 const lineTime = document.querySelector('.control__select__time__tree input')
 const lineVol = document.querySelector('.control__volume--input input')
+const currentTimeText = document.querySelector('.control__select__time--left')
 
 const iconVolFull = document.querySelector('.control__volume--icon .volume-full')
 const iconVolMute = document.querySelector('.control__volume--icon .volume-mute')
@@ -211,9 +212,16 @@ function handleEvents() {
     }
 
     audio.ontimeupdate = function() {
-        timePercent = audio.currentTime/audio.duration *100
+        let currentTime = audio.currentTime  
+
+        timePercent = currentTime/audio.duration *100
         lineTime.value = timePercent>0 ? timePercent : 0
-        
+
+        let minute = Math.floor(currentTime/60)
+        let second = Math.floor(currentTime -minute*60)<10?`0${Math.floor(currentTime -minute*60)}`:Math.floor(currentTime -minute*60)
+
+        currentTimeText.textContent = `0${minute}:${second}`
+
     }
 
     lineTime.onchange = function(e) {
